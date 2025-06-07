@@ -1,0 +1,253 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.232 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.927 seconds]
+
+▲ [WARNING] TS-998113: NavbarComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:7:26:
+      7 │   imports: [RouterOutlet, NavbarComponent],
+        ╵                           ~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:17:11:
+      17 │       <li *ngFor="let link of navLinks">
+         ╵            ~~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:23:15:
+      23 │         <span *ngIf="!isDarkTheme" class="toggle-icon sun" aria-hi...
+         ╵                ~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:26:15:
+      26 │         <span *ngIf="isDarkTheme" class="toggle-icon moon" aria-hi...
+         ╵                ~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] expected "{".
+    ╷
+242 │ @supports not (backdrop-filter: blur(1px)) and not (-webkit-backdrop-filter: blur(1px)) {
+    │                                            ^
+    ╵
+  src/app/navbar/navbar.component.scss 242:44  root stylesheet [plugin angular-sass]
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |   8.37 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    |  98.66 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-KVANL6MM.mjs   | -                |   8.80 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.255 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:17:11:
+      17 │       <li *ngFor="let link of navLinks">
+         ╵            ~~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:23:15:
+      23 │         <span *ngIf="!isDarkTheme" class="toggle-icon sun" aria-hi...
+         ╵                ~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.html:26:15:
+      26 │         <span *ngIf="isDarkTheme" class="toggle-icon moon" aria-hi...
+         ╵                ~~~~
+
+  Error occurs in the template of component NavbarComponent.
+
+    src/app/navbar/navbar.component.ts:7:15:
+      7 │   templateUrl: './navbar.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.384 seconds]
+
+✘ [ERROR] expected "{".
+    ╷
+242 │ @supports not (backdrop-filter: blur(1px)) and not (-webkit-backdrop-filter: blur(1px)) {
+    │                                            ^
+    ╵
+  src/app/navbar/navbar.component.scss 242:44  root stylesheet [plugin angular-sass]
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  16.48 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 106.78 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-OO2HSMUQ.mjs   | -                |  16.92 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.378 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  16.92 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-GG36V4EF.mjs  | -           |  17.36 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.336 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  16.91 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-6VXM4UNB.mjs  | -           |  17.34 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.235 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  17.10 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-CUNDSUTG.mjs  | -           |  17.54 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.246 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.262 seconds]
+
+✘ [ERROR] TS2305: Module '"@angular/common"' has no exported member 'PLATFORM_ID'. [plugin angular-compiler]
+
+    src/app/navbar/navbar.component.ts:2:52:
+      2 │ ...monModule, isPlatformBrowser, PLATFORM_ID } from '@angular/common';
+        ╵                                  ~~~~~~~~~~~
+
+

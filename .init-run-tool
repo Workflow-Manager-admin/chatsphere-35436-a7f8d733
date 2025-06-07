@@ -1,0 +1,4 @@
+{
+    "command": "npm start -- --port <port>",
+    "working_directory": "/home/kavia/workspace/code-generation/chatsphere-35436-a7f8d733/chat_sphere_frontend"
+}
